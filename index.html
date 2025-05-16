@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>BIOAM</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioam Front Page</title>
   <style>
-    html, body {
-      height: 100%;
+    body {
       margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
+    header {
       background-color: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: white;
-      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
     }
 
     .hero {
-      flex: 1; /* Pushes footer down */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2rem;
+      background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .hero button {
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     footer {
+      background-color: #111;
+      color: white;
       padding: 1rem;
-      background-color: #000;
-      font-size: 0.9rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <!-- Navigation here -->
-  </nav>
+  <header>
+    <div><strong>BIOAM</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <div class="hero">
-    <h1>BIOAM</h1>
-    <p>View Our Latest Products</p>
+  <section class="hero">
+    <h1>Welcom to BIOAM</h1>
+    <p>View Our Latest Product</p>
     <button>Click Here</button>
-  </div>
+  </section>
 
   <footer>
     &copy; 2025 Bioam. All rights reserved.
